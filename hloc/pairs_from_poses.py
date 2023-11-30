@@ -4,7 +4,7 @@ import numpy as np
 import scipy.spatial
 
 from . import logger
-from .utils.read_write_model import read_images_binary
+from .utils.read_write_model import read_images_binary, read_images_text
 from .pairs_from_retrieval import pairs_from_score_matrix
 
 DEFAULT_ROT_THRESH = 30  # in degrees
@@ -39,9 +39,13 @@ def get_pairwise_distances(images):
     return ids, dist, dR
 
 
-def main(model, output, num_matched, rotation_threshold=DEFAULT_ROT_THRESH):
+def main(model, output, num_matched, rotation_threshold=DEFAULT_ROT_THRESH, use_text_file=False):
     logger.info('Reading the COLMAP model...')
-    images = read_images_binary(model / 'images.bin')
+    if use_text_file:
+        images = read_images_text(model / 'images.txt')
+    else:
+        images = read_images_binary(model / 'images.bin')
+
 
     logger.info(
         f'Obtaining pairwise distances between {len(images)} images...')
