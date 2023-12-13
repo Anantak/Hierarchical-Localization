@@ -69,11 +69,8 @@ def import_features(image_ids: Dict[str, int],
     db.close()
 
 
-def import_matches(image_ids: Dict[str, int],
-                   database_path: Path,
-                   pairs_path: Path,
-                   matches_path: Path,
-                   min_match_score: Optional[float] = None,
+def import_matches(image_ids: Dict[str, int], database_path: Path, pairs_path: Path,
+                   matches_path: Path, min_match_score: Optional[float] = None,
                    skip_geometric_verification: bool = False):
     logger.info('Importing matches into the database...')
 
@@ -84,9 +81,18 @@ def import_matches(image_ids: Dict[str, int],
 
     matched = set()
     for name0, name1 in tqdm(pairs):
-        id0, id1 = image_ids[name0], image_ids[name1]
-        if len({(id0, id1), (id1, id0)} & matched) > 0:
+        # Handle cases with and without '.jpg' extension
+        name0_with_ext = name0 if name0.endswith('.jpg') else f"{name0}.jpg"
+        name1_with_ext = name1 if name1.endswith('.jpg') else f"{name1}.jpg"
+
+        if name0_with_ext not in image_ids or name1_with_ext not in image_ids:
+            missing_images = [img for img in [name0_with_ext, name1_with_ext] if img not in image_ids]
+            logger.warning(f"Missing from image_ids: {missing_images}. Skipping pair {name0}, {name1}.")
             continue
+
+        # ... rest of the code ...
+
+        id0, id1 = image_ids[name0_with_ext], image_ids[name1_with_ext]
         matches, scores = get_matches(matches_path, name0, name1)
         if min_match_score:
             matches = matches[scores > min_match_score]
@@ -98,6 +104,7 @@ def import_matches(image_ids: Dict[str, int],
 
     db.commit()
     db.close()
+
 
 
 def estimation_and_geometric_verification(database_path: Path,

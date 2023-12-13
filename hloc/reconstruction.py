@@ -23,11 +23,8 @@ def create_empty_db(database_path: Path):
     db.close()
 
 
-def import_images(image_dir: Path,
-                  database_path: Path,
-                  camera_mode: pycolmap.CameraMode,
-                  image_list: Optional[List[str]] = None,
-                  options: Optional[Dict[str, Any]] = None):
+def import_images(image_dir: Path, database_path: Path, camera_mode: pycolmap.CameraMode,
+                  image_list: Optional[List[str]] = None, options: Optional[Dict[str, Any]] = None):
     logger.info('Importing images into the database...')
     if options is None:
         options = {}
@@ -35,9 +32,11 @@ def import_images(image_dir: Path,
     if len(images) == 0:
         raise IOError(f'No images found in {image_dir}.')
     with pycolmap.ostream():
-        pycolmap.import_images(database_path, image_dir, camera_mode,
-                               image_list=image_list or [],
-                               options=options)
+        if not image_list:
+            # If image_list is not provided, automatically generate it from the image directory
+            image_list = [img.name for img in images]
+        pycolmap.import_images(database_path, image_dir, camera_mode, image_list=image_list, options=options)
+
 
 
 def get_image_ids(database_path: Path) -> Dict[str, int]:

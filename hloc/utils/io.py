@@ -3,7 +3,7 @@ from pathlib import Path
 import numpy as np
 import cv2
 import h5py
-
+import os
 from .parsers import names_to_pair, names_to_pair_old
 
 
@@ -27,12 +27,19 @@ def list_h5_names(path):
             if isinstance(obj, h5py.Dataset):
                 names.append(obj.parent.name.strip('/'))
         fd.visititems(visit_fn)
+
+        # print(names)
+        # quit()
     return list(set(names))
 
 
 def get_keypoints(path: Path, name: str,
                   return_uncertainty: bool = False) -> np.ndarray:
+    print(path)
     with h5py.File(str(path), 'r', libver='latest') as hfile:
+        # print("Available keys:", list(hfile.keys()))  # Print all keys
+        # print("Query image name:", name)
+
         dset = hfile[name]['keypoints']
         p = dset.__array__()
         uncertainty = dset.attrs.get('uncertainty')
@@ -41,7 +48,12 @@ def get_keypoints(path: Path, name: str,
     return p
 
 
+
 def find_pair(hfile: h5py.File, name0: str, name1: str):
+    # Strip the path from the filenames
+    name0 = os.path.basename(name0)
+    name1 = os.path.basename(name1)
+
     pair = names_to_pair(name0, name1)
     if pair in hfile:
         return pair, False
@@ -58,6 +70,7 @@ def find_pair(hfile: h5py.File, name0: str, name1: str):
     raise ValueError(
         f'Could not find pair {(name0, name1)}... '
         'Maybe you matched with a different list of pairs? ')
+
 
 
 def get_matches(path: Path, name0: str, name1: str) -> Tuple[np.ndarray]:

@@ -73,7 +73,7 @@ def pose_from_cluster(
         matches_path: Path,
         **kwargs):
 
-    kpq = get_keypoints(features_path, qname)
+    kpq = get_keypoints(features_path, Path(qname).name)
     kpq += 0.5  # COLMAP coordinates
 
     kp_idx_to_3D = defaultdict(list)
@@ -141,10 +141,18 @@ def main(reference_sfm: Union[Path, pycolmap.Reconstruction],
     queries = parse_image_lists(queries, with_intrinsics=True)
     retrieval_dict = parse_retrieval(retrieval)
 
+    # print(retrieval_dict)
+    # for i in retrieval_dict.keys():
+    #     print(i)
+    # quit()
+
     logger.info('Reading the 3D model...')
     if not isinstance(reference_sfm, pycolmap.Reconstruction):
         reference_sfm = pycolmap.Reconstruction(reference_sfm)
     db_name_to_id = {img.name: i for i, img in reference_sfm.images.items()}
+
+    print(db_name_to_id)
+
 
     config = {"estimation": {"ransac": {"max_error": ransac_thresh}},
               **(config or {})}
@@ -158,18 +166,30 @@ def main(reference_sfm: Union[Path, pycolmap.Reconstruction],
         'loc': {},
     }
     logger.info('Starting localization...')
+
+
+    # print(retrieval_dict)
+    # print(db_name_to_id)
+    # quit()
     for qname, qcam in tqdm(queries):
-        if qname not in retrieval_dict:
-            logger.warning(
-                f'No images retrieved for query image {qname}. Skipping...')
+        query_image_name = Path(qname).name
+        if query_image_name not in retrieval_dict:
+            logger.warning(f'No images retrieved for query image {query_image_name}. Skipping...')
             continue
-        db_names = retrieval_dict[qname]
+
+        db_names = retrieval_dict[query_image_name]
+        print(f"Query: {query_image_name}, DB Names: {db_names}")
+
         db_ids = []
-        for n in db_names:
-            if n not in db_name_to_id:
-                logger.warning(f'Image {n} was retrieved but not in database')
-                continue
-            db_ids.append(db_name_to_id[n])
+        for db_name in db_names:
+            if db_name in db_name_to_id:
+                db_ids.append(db_name_to_id[db_name])
+            else:
+                logger.warning(f'Retrieved image {db_name} for query {query_image_name} not in database')
+
+        print(f"DB IDs: {db_ids}")
+
+
 
         if covisibility_clustering:
             clusters = do_covisibility_clustering(db_ids, reference_sfm)
@@ -193,15 +213,20 @@ def main(reference_sfm: Union[Path, pycolmap.Reconstruction],
                 'covisibility_clustering': covisibility_clustering,
             }
         else:
-            ret, log = pose_from_cluster(
-                    localizer, qname, qcam, db_ids, features, matches)
-            if ret['success']:
-                poses[qname] = (ret['qvec'], ret['tvec'])
+            if db_ids:  # Check if db_ids list is not empty
+                ret, log = pose_from_cluster(
+                        localizer, qname, qcam, db_ids, features, matches)
+                if ret['success']:
+                    poses[qname] = (ret['qvec'], ret['tvec'])
+                else:
+                    closest = reference_sfm.images[db_ids[0]]
+                    poses[qname] = (closest.qvec, closest.tvec)
             else:
-                closest = reference_sfm.images[db_ids[0]]
-                poses[qname] = (closest.qvec, closest.tvec)
+                # Handle the case where db_ids is empty
+                print(f"No database images found for query {qname}")
+                continue  # Skip to the next iteration of the loop
             log['covisibility_clustering'] = covisibility_clustering
-            logs['loc'][qname] = log
+
 
     logger.info(f'Localized {len(poses)} / {len(queries)} images.')
     logger.info(f'Writing poses to {results}...')

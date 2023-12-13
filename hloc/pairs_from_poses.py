@@ -42,7 +42,7 @@ def get_pairwise_distances(images):
 def main(model, output, num_matched, rotation_threshold=DEFAULT_ROT_THRESH, use_text_file=False):
     logger.info('Reading the COLMAP model...')
     if use_text_file:
-        images = read_images_text(model / 'images.txt')
+        images = read_images_text(model / 'poses.txt')
     else:
         images = read_images_binary(model / 'images.bin')
 

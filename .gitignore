@@ -2,6 +2,6 @@ __pycache__
 *.pyc
 *.egg-info
 .ipynb_checkpoints
-outputs/
+outputs/*
 datasets/*
 !datasets/sacre_coeur/

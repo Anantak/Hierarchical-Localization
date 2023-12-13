@@ -3,6 +3,7 @@ import random
 import numpy as np
 import pickle
 import pycolmap
+import matplotlib.pyplot as plt  # ensure this is imported
 
 from .utils.viz import (
         plot_images, plot_keypoints, plot_matches, cm_RdGn, add_text)
@@ -66,19 +67,18 @@ def visualize_loc(results, image_dir, reconstruction=None, db_image_dir=None,
             queries = [q for q in queries if q.startswith(prefix)]
         selected = random.Random(seed).sample(queries, min(n, len(queries)))
 
-    if reconstruction is not None:
-        if not isinstance(reconstruction, pycolmap.Reconstruction):
-            reconstruction = pycolmap.Reconstruction(reconstruction)
-
+    figures = []  # Initialize a list to collect figures
     for qname in selected:
         loc = logs['loc'][qname]
-        visualize_loc_from_log(
+        fig = visualize_loc_from_log(
             image_dir, qname, loc, reconstruction, db_image_dir, **kwargs)
+        figures.append(fig)  # Append the figure to the list
+    return figures  # Return the list of figures
+
 
 
 def visualize_loc_from_log(image_dir, query_name, loc, reconstruction=None,
                            db_image_dir=None, top_k_db=2, dpi=75):
-
     q_image = read_image(image_dir / query_name)
     if loc.get('covisibility_clustering', False):
         # select the first, largest cluster if the localization failed
@@ -87,6 +87,9 @@ def visualize_loc_from_log(image_dir, query_name, loc, reconstruction=None,
     inliers = np.array(loc['PnP_ret']['inliers'])
     mkp_q = loc['keypoints_query']
     n = len(loc['db'])
+
+    fig, axs = plt.subplots(1, 2, figsize=(15, 8))  # Create a figure with 2 subplots
+
     if reconstruction is not None:
         # for each pair of query keypoint and its matched 3D point,
         # we need to find its corresponding keypoint in each database image
@@ -137,3 +140,7 @@ def visualize_loc_from_log(image_dir, query_name, loc, reconstruction=None,
         opts = dict(pos=(0.01, 0.01), fs=5, lcolor=None, va='bottom')
         add_text(0, query_name, **opts)
         add_text(1, db_name, **opts)
+
+        plt.close(fig)  # Prevents the figure from being displayed immediately
+    
+    return fig  # Return the figure object

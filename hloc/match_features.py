@@ -110,29 +110,44 @@ class WorkQueue():
 
 
 class FeaturePairsDataset(torch.utils.data.Dataset):
-    def __init__(self, pairs, feature_path_q, feature_path_r):
+    def __init__(self, pairs, feature_path_dataset, feature_path_queries):
         self.pairs = pairs
-        self.feature_path_q = feature_path_q
-        self.feature_path_r = feature_path_r
+        self.feature_path_dataset = feature_path_dataset
+        self.feature_path_queries = feature_path_queries
 
     def __getitem__(self, idx):
         name0, name1 = self.pairs[idx]
+
+        # Append '.jpg' extension if not present
+        name0_with_ext = name0 if name0.endswith('.jpg') else name0 + '.jpg'
+        name1_with_ext = name1 if name1.endswith('.jpg') else name1 + '.jpg'
+
         data = {}
-        with h5py.File(self.feature_path_q, 'r') as fd:
-            grp = fd[name0]
-            for k, v in grp.items():
-                data[k+'0'] = torch.from_numpy(v.__array__()).float()
-            # some matchers might expect an image but only use its size
+
+        # Process first image
+        feature_path0 = self.feature_path_queries if 'test' in name0 else self.feature_path_dataset
+        print(f"Accessing {name0_with_ext} from {feature_path0}")  # Added print statement
+        with h5py.File(feature_path0, 'r') as fd:
+            grp = fd[name0_with_ext]  # Use the modified name
+            data['keypoints0'] = torch.from_numpy(grp['keypoints'].__array__()).float()
+            data['descriptors0'] = torch.from_numpy(grp['descriptors'].__array__()).float()
             data['image0'] = torch.empty((1,)+tuple(grp['image_size'])[::-1])
-        with h5py.File(self.feature_path_r, 'r') as fd:
-            grp = fd[name1]
-            for k, v in grp.items():
-                data[k+'1'] = torch.from_numpy(v.__array__()).float()
+
+        # Process second image
+        feature_path1 = self.feature_path_queries if 'test' in name1 else self.feature_path_dataset
+        print(f"Accessing {name1_with_ext} from {feature_path1}")  # Added print statement
+        with h5py.File(feature_path1, 'r') as fd:
+            grp = fd[name1_with_ext]  # Use the modified name
+            data['keypoints1'] = torch.from_numpy(grp['keypoints'].__array__()).float()
+            data['descriptors1'] = torch.from_numpy(grp['descriptors'].__array__()).float()
             data['image1'] = torch.empty((1,)+tuple(grp['image_size'])[::-1])
+
         return data
 
     def __len__(self):
         return len(self.pairs)
+
+
 
 
 def writer_fn(inp, match_path):
@@ -225,7 +240,9 @@ def match_from_paths(conf: Dict,
     Model = dynamic_load(matchers, conf['model']['name'])
     model = Model(conf['model']).eval().to(device)
 
-    dataset = FeaturePairsDataset(pairs, feature_path_q, feature_path_ref)
+    # Example usage
+    dataset = FeaturePairsDataset(pairs, feature_path_dataset='outputs/office/feats-disk.h5', feature_path_queries='outputs/office/feats-disk-queries.h5')
+
     loader = torch.utils.data.DataLoader(
         dataset, num_workers=5, batch_size=1, shuffle=False, pin_memory=True)
     writer_queue = WorkQueue(partial(writer_fn, match_path=match_path), 5)
