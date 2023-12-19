@@ -126,7 +126,7 @@ class FeaturePairsDataset(torch.utils.data.Dataset):
 
         # Process first image
         feature_path0 = self.feature_path_queries if 'test' in name0 else self.feature_path_dataset
-        print(f"Accessing {name0_with_ext} from {feature_path0}")  # Added print statement
+        # print(f" Accessing {name0_with_ext} from {feature_path0}")  # Added print statement
         with h5py.File(feature_path0, 'r') as fd:
             grp = fd[name0_with_ext]  # Use the modified name
             data['keypoints0'] = torch.from_numpy(grp['keypoints'].__array__()).float()
@@ -135,7 +135,7 @@ class FeaturePairsDataset(torch.utils.data.Dataset):
 
         # Process second image
         feature_path1 = self.feature_path_queries if 'test' in name1 else self.feature_path_dataset
-        print(f"Accessing {name1_with_ext} from {feature_path1}")  # Added print statement
+        # print(f" Accessing {name1_with_ext} from {feature_path1}")  # Added print statement
         with h5py.File(feature_path1, 'r') as fd:
             grp = fd[name1_with_ext]  # Use the modified name
             data['keypoints1'] = torch.from_numpy(grp['keypoints'].__array__()).float()
@@ -241,7 +241,7 @@ def match_from_paths(conf: Dict,
     model = Model(conf['model']).eval().to(device)
 
     # Example usage
-    dataset = FeaturePairsDataset(pairs, feature_path_dataset='outputs/office/feats-disk.h5', feature_path_queries='outputs/office/feats-disk-queries.h5')
+    dataset = FeaturePairsDataset(pairs, feature_path_dataset='outputs/testtrack/feats-disk.h5', feature_path_queries='outputs/testtrack/feats-disk-queries.h5')
 
     loader = torch.utils.data.DataLoader(
         dataset, num_workers=5, batch_size=1, shuffle=False, pin_memory=True)
