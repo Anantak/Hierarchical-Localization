@@ -1,14 +1,24 @@
 import argparse
 from pathlib import Path
 from hloc import extract_features, pairs_from_retrieval, match_features, localize_sfm, visualization
+import sys
+import numpy as np
+import pycolmap
+from hloc.utils.viz_3d import init_figure, plot_reconstruction, plot_camera_colmap, plot_points
+import pickle
 
 def query_processing():
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--dataset', help='Name of the dataset')
+    args = parser.parse_args()
+
     # Paths for query processing
-    base_dir = Path('datasets/office')
-    output_dir = Path('outputs/office')
-    db_img_dir = Path('datasets/office/frames')
-    query_dir = Path('datasets/office/queries')
-    reference_sfm = Path('datasets/office/frames/models/0')
+    base_dir = Path(f'datasets/{args.dataset}')
+    output_dir = Path(f'outputs/{args.dataset}')
+    db_img_dir = base_dir / 'frames'
+    query_dir = base_dir / 'queries'
+    reference_sfm = output_dir / 'models'
     queries = base_dir / 'query_with_intrinsics.txt'
     results = output_dir / 'estimated_poses.txt'
 

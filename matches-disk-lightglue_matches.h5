@@ -1,0 +1,2036 @@
+HDF5 "matches-disk-lightglue_matches.h5" {
+GROUP "/" {
+   GROUP "out-681.jpg" {
+      GROUP "out-17.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-25.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-26.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-28.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-29.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-31.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-35.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-36.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-37.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-38.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-39.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-40.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-41.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-42.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-43.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-45.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-47.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-48.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-49.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-60.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+   }
+}
+}
+HDF5 "matches-disk-lightglue_matches.h5" {
+GROUP "/" {
+   GROUP "out-107.jpg" {
+      GROUP "out-120.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-121.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-122.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-123.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-126.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-127.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-128.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-129.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-130.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-131.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-133.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-134.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-135.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-136.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-137.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-138.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-139.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-140.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-143.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-145.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+   }
+   GROUP "out-108.jpg" {
+      GROUP "out-122.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-123.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-126.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-127.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-128.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-129.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-130.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-131.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-132.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-133.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-134.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-135.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-136.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-137.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-138.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-139.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-140.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-143.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-145.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-146.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+   }
+   GROUP "out-109.jpg" {
+      GROUP "out-121.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-122.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-123.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-126.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-127.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-128.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-129.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-130.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-131.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-132.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-133.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-134.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-135.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-136.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-137.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-138.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-139.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-140.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-141.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-143.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+   }
+}
+}
+HDF5 "matches-disk-lightglue_matches.h5" {
+GROUP "/" {
+   GROUP "out-107.jpg" {
+      GROUP "out-120.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-121.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-122.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-123.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-126.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-127.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-128.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-129.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-130.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-131.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-133.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-134.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-135.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-136.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-137.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-138.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-139.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-140.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-143.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-145.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+   }
+   GROUP "out-108.jpg" {
+      GROUP "out-122.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-123.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-126.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-127.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-128.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-129.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-130.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-131.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-132.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-133.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-134.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-135.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-136.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-137.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-138.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-139.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-140.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-143.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-145.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-146.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+   }
+   GROUP "out-109.jpg" {
+      GROUP "out-121.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-122.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-123.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-126.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-127.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-128.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-129.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-130.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-131.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-132.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-133.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-134.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-135.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-136.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-137.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-138.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-139.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-140.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-141.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-143.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+   }
+}
+}
+HDF5 "matches-disk-lightglue_matches.h5" {
+GROUP "/" {
+   GROUP "out-107.jpg" {
+      GROUP "out-120.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-121.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-122.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-123.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-126.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-127.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-128.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-129.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-130.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-131.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-133.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-134.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-135.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-136.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-137.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-138.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-139.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-140.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-143.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-145.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+   }
+   GROUP "out-108.jpg" {
+      GROUP "out-122.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-123.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-126.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-127.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-128.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-129.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-130.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-131.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-132.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-133.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-134.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-135.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-136.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-137.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-138.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-139.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-140.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-143.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-145.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-146.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+   }
+   GROUP "out-109.jpg" {
+      GROUP "out-121.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-122.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-123.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-126.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-127.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-128.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-129.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-130.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-131.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-132.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-133.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-134.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-135.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-136.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-137.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-138.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-139.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-140.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-141.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+      GROUP "out-143.jpg" {
+         DATASET "matches0" {
+            DATATYPE  H5T_STD_I16LE
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+         DATASET "matching_scores0" {
+            DATATYPE  16-bit little-endian floating-point
+            DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+         }
+      }
+   }
+}
+}

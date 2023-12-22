@@ -73,42 +73,52 @@ def pose_from_cluster(
         matches_path: Path,
         **kwargs):
 
+    # print(f"Processing query image: {qname}")
     kpq = get_keypoints(features_path, Path(qname).name)
     kpq += 0.5  # COLMAP coordinates
 
     kp_idx_to_3D = defaultdict(list)
     kp_idx_to_3D_to_db = defaultdict(lambda: defaultdict(list))
     num_matches = 0
+
+    # print(f"Database IDs for {qname}: {db_ids}")
+
     for i, db_id in enumerate(db_ids):
         image = localizer.reconstruction.images[db_id]
+        # print(f"Checking database image: {image.name}")
         if image.num_points3D() == 0:
-            logger.debug(f'No 3D points found for {image.name}.')
+            print(f'No 3D points found for {image.name}.')
             continue
+
         points3D_ids = np.array([p.point3D_id if p.has_point3D() else -1
                                  for p in image.points2D])
 
         matches, _ = get_matches(matches_path, qname, image.name)
+        if len(matches) == 0:
+            # print(f"No matches found for query image {qname} with database image {image.name}")
+            continue
+
         matches = matches[points3D_ids[matches[:, 1]] != -1]
         num_matches += len(matches)
+        # if len(matches) > 0:
+            # print(f"Found {len(matches)} matches for query image {qname} with database image {image.name}")
         for idx, m in matches:
             id_3D = points3D_ids[m]
             kp_idx_to_3D_to_db[idx][id_3D].append(i)
-            # avoid duplicate observations
             if id_3D not in kp_idx_to_3D[idx]:
                 kp_idx_to_3D[idx].append(id_3D)
+
+    # print(f"Total matches found: {num_matches}")
+    if num_matches == 0:
+        print(f"No matches found for any database images with query image {qname}")
+        return {'success': False}, {}
 
     idxs = list(kp_idx_to_3D.keys())
     mkp_idxs = [i for i in idxs for _ in kp_idx_to_3D[i]]
     mp3d_ids = [j for i in idxs for j in kp_idx_to_3D[i]]
     ret = localizer.localize(kpq, mkp_idxs, mp3d_ids, query_camera, **kwargs)
-    ret['camera'] = {
-        'model': query_camera.model_name,
-        'width': query_camera.width,
-        'height': query_camera.height,
-        'params': query_camera.params,
-    }
 
-    # mostly for logging and post-processing
+    # Logging and post-processing
     mkp_to_3D_to_db = [(j, kp_idx_to_3D_to_db[i][j])
                        for i in idxs for j in kp_idx_to_3D[i]]
     log = {
@@ -116,11 +126,12 @@ def pose_from_cluster(
         'PnP_ret': ret,
         'keypoints_query': kpq[mkp_idxs],
         'points3D_ids': mp3d_ids,
-        'points3D_xyz': None,  # we don't log xyz anymore because of file size
+        'points3D_xyz': None,
         'num_matches': num_matches,
         'keypoint_index_to_db': (mkp_idxs, mkp_to_3D_to_db),
     }
     return ret, log
+
 
 
 def main(reference_sfm: Union[Path, pycolmap.Reconstruction],
@@ -151,7 +162,7 @@ def main(reference_sfm: Union[Path, pycolmap.Reconstruction],
         reference_sfm = pycolmap.Reconstruction(reference_sfm)
     db_name_to_id = {img.name: i for i, img in reference_sfm.images.items()}
 
-    print(db_name_to_id)
+    # print(db_name_to_id)
 
 
     config = {"estimation": {"ransac": {"max_error": ransac_thresh}},
@@ -178,7 +189,7 @@ def main(reference_sfm: Union[Path, pycolmap.Reconstruction],
             continue
 
         db_names = retrieval_dict[query_image_name]
-        print(f"Query: {query_image_name}, DB Names: {db_names}")
+        # print(f"Query: {query_image_name}, DB Names: {db_names}")
 
         db_ids = []
         for db_name in db_names:
@@ -187,7 +198,7 @@ def main(reference_sfm: Union[Path, pycolmap.Reconstruction],
             else:
                 logger.warning(f'Retrieved image {db_name} for query {query_image_name} not in database')
 
-        print(f"DB IDs: {db_ids}")
+        # print(f"DB IDs: {db_ids}")
 
 
 

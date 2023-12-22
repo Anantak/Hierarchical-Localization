@@ -141,6 +141,7 @@ def visualize_loc_from_log(image_dir, query_name, loc, reconstruction=None,
         add_text(0, query_name, **opts)
         add_text(1, db_name, **opts)
 
-        plt.close(fig)  # Prevents the figure from being displayed immediately
+        # plt.close(fig)  # Prevents the figure from being displayed immediately
+        fig.savefig(f'{image_dir}/out-107_visualization.png')
     
     return fig  # Return the figure object

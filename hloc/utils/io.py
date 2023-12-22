@@ -35,7 +35,7 @@ def list_h5_names(path):
 
 def get_keypoints(path: Path, name: str,
                   return_uncertainty: bool = False) -> np.ndarray:
-    print(path)
+    # print(path)
     with h5py.File(str(path), 'r', libver='latest') as hfile:
         # print("Available keys:", list(hfile.keys()))  # Print all keys
         # print("Query image name:", name)
@@ -53,6 +53,8 @@ def find_pair(hfile: h5py.File, name0: str, name1: str):
     # Strip the path from the filenames
     name0 = os.path.basename(name0)
     name1 = os.path.basename(name1)
+
+    # print(hfile)
 
     pair = names_to_pair(name0, name1)
     if pair in hfile:
@@ -75,12 +77,25 @@ def find_pair(hfile: h5py.File, name0: str, name1: str):
 
 def get_matches(path: Path, name0: str, name1: str) -> Tuple[np.ndarray]:
     with h5py.File(str(path), 'r', libver='latest') as hfile:
-        pair, reverse = find_pair(hfile, name0, name1)
+        # print(f"Opened .h5 file: {path}")
+
+        try:
+            pair, reverse = find_pair(hfile, name0, name1)
+            # print(f"Found pair: {pair} (reverse: {reverse})")
+        except ValueError:
+            # print(f"Pair not found for: {name0}, {name1}")
+            return np.array([]), np.array([])
+
         matches = hfile[pair]['matches0'].__array__()
         scores = hfile[pair]['matching_scores0'].__array__()
-    idx = np.where(matches != -1)[0]
-    matches = np.stack([idx, matches[idx]], -1)
-    if reverse:
-        matches = np.flip(matches, -1)
-    scores = scores[idx]
-    return matches, scores
+        # print(f"Initial matches: {len(matches)}, scores: {len(scores)}")
+
+        idx = np.where(matches != -1)[0]
+        matches = np.stack([idx, matches[idx]], -1)
+        if reverse:
+            matches = np.flip(matches, -1)
+        scores = scores[idx]
+
+        # print(f"Filtered matches: {len(matches)}")
+        return matches, scores
+
