@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message LocalizationData {
+    float x = 1;
+    float y = 2;
+    float z = 3;
+    // Add other fields as needed
+}
+

@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message ImageMessage {
+    bytes image_data = 1; // The image data
+    string image_format = 2; // The format of the image, e.g., "jpeg"
+}
+

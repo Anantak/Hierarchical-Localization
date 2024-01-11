@@ -1,0 +1,66 @@
+HDF5 "feats-disk-queries.h5" {
+GROUP "/" {
+   GROUP "query.jpeg" {
+      DATASET "descriptors" {
+         DATATYPE  16-bit little-endian floating-point
+         DATASPACE  SIMPLE { ( 128, 5000 ) / ( 128, 5000 ) }
+      }
+      DATASET "image_size" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 2 ) / ( 2 ) }
+      }
+      DATASET "keypoint_scores" {
+         DATATYPE  16-bit little-endian floating-point
+         DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+      }
+      DATASET "keypoints" {
+         DATATYPE  16-bit little-endian floating-point
+         DATASPACE  SIMPLE { ( 5000, 2 ) / ( 5000, 2 ) }
+      }
+   }
+}
+}
+HDF5 "feats-disk-queries.h5" {
+GROUP "/" {
+   GROUP "query.jpeg" {
+      DATASET "descriptors" {
+         DATATYPE  16-bit little-endian floating-point
+         DATASPACE  SIMPLE { ( 128, 5000 ) / ( 128, 5000 ) }
+      }
+      DATASET "image_size" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 2 ) / ( 2 ) }
+      }
+      DATASET "keypoint_scores" {
+         DATATYPE  16-bit little-endian floating-point
+         DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+      }
+      DATASET "keypoints" {
+         DATATYPE  16-bit little-endian floating-point
+         DATASPACE  SIMPLE { ( 5000, 2 ) / ( 5000, 2 ) }
+      }
+   }
+}
+}
+HDF5 "feats-disk-queries.h5" {
+GROUP "/" {
+   GROUP "query.jpeg" {
+      DATASET "descriptors" {
+         DATATYPE  16-bit little-endian floating-point
+         DATASPACE  SIMPLE { ( 128, 5000 ) / ( 128, 5000 ) }
+      }
+      DATASET "image_size" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 2 ) / ( 2 ) }
+      }
+      DATASET "keypoint_scores" {
+         DATATYPE  16-bit little-endian floating-point
+         DATASPACE  SIMPLE { ( 5000 ) / ( 5000 ) }
+      }
+      DATASET "keypoints" {
+         DATATYPE  16-bit little-endian floating-point
+         DATASPACE  SIMPLE { ( 5000, 2 ) / ( 5000, 2 ) }
+      }
+   }
+}
+}

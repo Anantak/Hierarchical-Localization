@@ -85,15 +85,19 @@ def pose_from_cluster(
 
     for i, db_id in enumerate(db_ids):
         image = localizer.reconstruction.images[db_id]
-        # print(f"Checking database image: {image.name}")
-        if image.num_points3D() == 0:
-            print(f'No 3D points found for {image.name}.')
+        # print(f"Processing DB Image: {image.name}")
+        # existing code...
+        matches, _ = get_matches(matches_path, qname, image.name)
+        if len(matches) == 0:
+            print(f"No matches for query {qname} with DB image {image.name}")
             continue
+        # print(f"{len(matches)} matches found for query {qname} with DB image {image.name}")
 
         points3D_ids = np.array([p.point3D_id if p.has_point3D() else -1
                                  for p in image.points2D])
 
         matches, _ = get_matches(matches_path, qname, image.name)
+
         if len(matches) == 0:
             # print(f"No matches found for query image {qname} with database image {image.name}")
             continue
@@ -101,14 +105,14 @@ def pose_from_cluster(
         matches = matches[points3D_ids[matches[:, 1]] != -1]
         num_matches += len(matches)
         # if len(matches) > 0:
-            # print(f"Found {len(matches)} matches for query image {qname} with database image {image.name}")
+        #     print(f"Found {len(matches)} matches for query image {qname} with database image {image.name}")
         for idx, m in matches:
             id_3D = points3D_ids[m]
             kp_idx_to_3D_to_db[idx][id_3D].append(i)
             if id_3D not in kp_idx_to_3D[idx]:
                 kp_idx_to_3D[idx].append(id_3D)
 
-    # print(f"Total matches found: {num_matches}")
+    print(f"Total matches found: {num_matches}")
     if num_matches == 0:
         print(f"No matches found for any database images with query image {qname}")
         return {'success': False}, {}
@@ -130,6 +134,9 @@ def pose_from_cluster(
         'num_matches': num_matches,
         'keypoint_index_to_db': (mkp_idxs, mkp_to_3D_to_db),
     }
+
+    # print('done')
+
     return ret, log
 
 
@@ -189,7 +196,8 @@ def main(reference_sfm: Union[Path, pycolmap.Reconstruction],
             continue
 
         db_names = retrieval_dict[query_image_name]
-        # print(f"Query: {query_image_name}, DB Names: {db_names}")
+        print(f"Query Image: {query_image_name}, DB Images: {db_names}")
+
 
         db_ids = []
         for db_name in db_names:
@@ -197,8 +205,8 @@ def main(reference_sfm: Union[Path, pycolmap.Reconstruction],
                 db_ids.append(db_name_to_id[db_name])
             else:
                 logger.warning(f'Retrieved image {db_name} for query {query_image_name} not in database')
+        print(f"DB IDs for {query_image_name}: {db_ids}")
 
-        # print(f"DB IDs: {db_ids}")
 
 
 

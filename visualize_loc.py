@@ -4,7 +4,7 @@ import pycolmap
 from hloc.utils.viz_3d import init_figure, plot_reconstruction, plot_camera_colmap, plot_points
 import pickle
 
-def visualize_localization(model_path, ret, log, camera):
+def visualize_localization(model_path, ret, camera):
     # Load the reconstruction
     rec = pycolmap.Reconstruction()
     rec.read(model_path)
@@ -17,18 +17,40 @@ def visualize_localization(model_path, ret, log, camera):
     pose = pycolmap.Image(tvec=ret['tvec'], qvec=ret['qvec'])
     plot_camera_colmap(fig, pose, camera, color='rgba(0,255,0,0.5)', name="query", fill=True)
 
-    # Visualize 2D-3D correspondences
-    inl_3d = np.array([rec.points3D[pid].xyz for pid in np.array(log['points3D_ids'])[ret['inliers']]])
-    plot_points(fig, inl_3d, color="lime", ps=1, name="query")
-
     # Show the figure
     fig.show()
+
 
 def load_localization_result(result_file_path):
     # Load the localization result from the file
     with open(result_file_path, 'rb') as f:
         localization_result = pickle.load(f)
     return localization_result
+
+import csv
+import ast
+
+import pycolmap
+
+def load_localization_result_csv(result_file_path):
+    with open(result_file_path, newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            # Assume there's only one row in the CSV
+            ret = {
+                'success': row['success'] == 'True',
+                'num_inliers': int(row['num_inliers']),
+                'qvec': ast.literal_eval(row['qvec']),
+                'tvec': ast.literal_eval(row['tvec']),
+            }
+            log = {'points3D_ids': [], 'inliers': []}  # Modify as needed
+
+            # Define the camera based on your camera_config
+            camera_config = {'model': 'SIMPLE_RADIAL', 'width': 1920, 'height': 1440, 'params': [1597.43, 1597.43, 953.97, 718.76]}
+            camera = pycolmap.Camera(model=camera_config['model'], width=camera_config['width'], height=camera_config['height'], params=camera_config['params'])
+
+            return ret, log, camera
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
@@ -37,7 +59,11 @@ if __name__ == "__main__":
 
     model_path = sys.argv[1]
     result_file_path = sys.argv[2]
-    ret, log, camera = load_localization_result(result_file_path)
 
-    visualize_localization(model_path, ret, log, camera)
+    model_path = sys.argv[1]
+    result_file_path = sys.argv[2]
+
+    ret, _, camera = load_localization_result_csv(result_file_path)
+
+    visualize_localization(model_path, ret, camera)
 
