@@ -118,7 +118,8 @@ class FeaturePairsDataset(torch.utils.data.Dataset):
     def __getitem__(self, idx):
         name0, name1 = self.pairs[idx]
 
-        # Append '.jpg' extension if not present
+        # # Append '.jpg' extension if not present
+        # name0_with_ext = name0 if name0.endswith('.jpg') else name0 + '.jpg'
         name0_with_ext = name0 if name0.endswith('.jpeg') else name0 + '.jpg'
         name1_with_ext = name1 if name1.endswith('.jpg') else name1 + '.jpg'
 

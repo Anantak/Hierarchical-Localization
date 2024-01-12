@@ -3,6 +3,9 @@ import numpy as np
 import pycolmap
 from hloc.utils.viz_3d import init_figure, plot_reconstruction, plot_camera_colmap, plot_points
 import pickle
+import csv
+import ast
+import pycolmap
 
 def visualize_localization(model_path, ret, camera):
     # Load the reconstruction
@@ -27,10 +30,6 @@ def load_localization_result(result_file_path):
         localization_result = pickle.load(f)
     return localization_result
 
-import csv
-import ast
-
-import pycolmap
 
 def load_localization_result_csv(result_file_path):
     with open(result_file_path, newline='') as csvfile:
@@ -59,10 +58,7 @@ if __name__ == "__main__":
 
     model_path = sys.argv[1]
     result_file_path = sys.argv[2]
-
-    model_path = sys.argv[1]
-    result_file_path = sys.argv[2]
-
+    
     ret, _, camera = load_localization_result_csv(result_file_path)
 
     visualize_localization(model_path, ret, camera)

@@ -36,6 +36,7 @@ def handle_connect(sid):
 @socketio.on('sendProtobufImage')
 def handle_protobuf_image(data):
     try:
+        image_saved = False
         image_message = imagedata_pb2.ImageMessage()
         image_message.ParseFromString(data)
         image_data = image_message.image_data
@@ -47,19 +48,8 @@ def handle_protobuf_image(data):
         image_save_path.parent.mkdir(parents=True, exist_ok=True)
         image = Image.open(io.BytesIO(image_data))
 
-        camera_pose = image_message.cameraPose
-        position = camera_pose.position
-        orientation = camera_pose.orientation
-
-        print(f"Camera Position: {position.x}, {position.y}, {position.z}")
-        print(f"Camera Orientation: {orientation.x}, {orientation.y}, {orientation.z}, {orientation.w}")
-        
-        image.save(str(image_save_path), image_format.upper())
-
-        relative_positions = query_processing(dataset_name, str(image_save_path), position, orientation)
-
-        if relative_positions:
-            socketio.emit('localizationResults', {'data': relative_positions})
+        if image_saved:
+            socketio.emit('imageResponse', {'data': 'SAVED IMAGE'})
         else:
             socketio.emit('imageResponse', {'data': 'Localization failed'})
 

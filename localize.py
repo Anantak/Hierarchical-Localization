@@ -6,6 +6,39 @@ import numpy as np
 import pycolmap
 from hloc.utils.viz_3d import init_figure, plot_reconstruction, plot_camera_colmap, plot_points
 import pickle
+from pycolmap import Reconstruction, Camera, Image
+
+
+def read_estimated_poses(file_path):
+    poses = {}
+    with open(file_path, 'r') as file:
+        for line in file:
+            parts = line.strip().split()
+            if len(parts) == 8:  # Ensure the line has the correct format
+                image_name, *pose = parts
+                poses[image_name] = [float(value) for value in pose]
+    return poses
+
+def plot_query_poses(fig, poses, reconstruction):
+    for image_name, pose in poses.items():
+        qvec = np.array(pose[:4])
+        tvec = np.array(pose[4:7])
+
+        # Find the corresponding image in the reconstruction
+        image_id = next((img_id for img_id, img in reconstruction.images.items() if img.name == image_name), None)
+        if image_id is not None:
+            camera_id = reconstruction.images[image_id].camera_id
+            camera = reconstruction.cameras[camera_id]
+
+            # Create a temporary Image object for plotting
+            temp_image = Image()
+            temp_image.qvec = qvec
+            temp_image.tvec = (tvec)
+
+            plot_camera_colmap(fig, temp_image, camera, name=image_name, color='green', fill=True)
+        else:
+            print(f"Image {image_name} not found in reconstruction.")
+
 
 def query_processing():
 
@@ -82,7 +115,30 @@ def query_processing():
         prepend_camera_name=False
     )
 
+    print(results)
     print("Query images processed and localized.")
+
+    # viz_camera = Camera(model=query_camera.model_name, width=query_camera.width, height=query_camera.height, params=query_camera.params)
+    # pose = Image(tvec=ret['tvec'], qvec=ret['qvec'])
+    # plot_camera_colmap(fig, pose, viz_camera, name=query_image_name, color='green', fill=True)
+
+    # plot_reconstruction(fig, reconstruction, points_rgb=True)
+    # # plot_reconstruction(fig, reconstruction, ret['tvec'], points_rgb=True)
+
+    # fig.show()
+
+    # Read and plot estimated posesQ
+    results_path = output_dir / 'estimated_poses.txt'
+    estimated_poses = read_estimated_poses(results_path)
+
+    fig = init_figure()
+    reconstruction = pycolmap.Reconstruction()
+    reconstruction.read(reference_sfm)
+
+    plot_reconstruction(fig, reconstruction, points_rgb=True)
+    plot_query_poses(fig, estimated_poses, reconstruction)
+
+    fig.show()
 
 if __name__ == '__main__':
     query_processing()

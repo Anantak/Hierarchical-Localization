@@ -1,7 +1,23 @@
 syntax = "proto3";
-
+// Define CameraPose message
+message CameraPose {
+    message Position {
+        float x = 1;
+        float y = 2;
+        float z = 3;
+    }
+    message Orientation {
+        float x = 1;
+        float y = 2;
+        float z = 3;
+        float w = 4;
+    }
+    Position position = 1;
+    Orientation orientation = 2;
+}
+// Define ImageMessage message
 message ImageMessage {
     bytes image_data = 1; // The image data
     string image_format = 2; // The format of the image, e.g., "jpeg"
+    CameraPose cameraPose = 3; // The camera pose
 }
-

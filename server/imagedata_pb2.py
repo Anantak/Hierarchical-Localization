@@ -19,10 +19,146 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x0fimagedata.proto\"8\n\x0cImageMessage\x12\x12\n\nimage_data\x18\x01 \x01(\x0c\x12\x14\n\x0cimage_format\x18\x02 \x01(\tb\x06proto3'
+  serialized_pb=b'\n\x0fimagedata.proto\"\xca\x01\n\nCameraPose\x12&\n\x08position\x18\x01 \x01(\x0b\x32\x14.CameraPose.Position\x12,\n\x0borientation\x18\x02 \x01(\x0b\x32\x17.CameraPose.Orientation\x1a+\n\x08Position\x12\t\n\x01x\x18\x01 \x01(\x02\x12\t\n\x01y\x18\x02 \x01(\x02\x12\t\n\x01z\x18\x03 \x01(\x02\x1a\x39\n\x0bOrientation\x12\t\n\x01x\x18\x01 \x01(\x02\x12\t\n\x01y\x18\x02 \x01(\x02\x12\t\n\x01z\x18\x03 \x01(\x02\x12\t\n\x01w\x18\x04 \x01(\x02\"Y\n\x0cImageMessage\x12\x12\n\nimage_data\x18\x01 \x01(\x0c\x12\x14\n\x0cimage_format\x18\x02 \x01(\t\x12\x1f\n\ncameraPose\x18\x03 \x01(\x0b\x32\x0b.CameraPoseb\x06proto3'
 )
 
 
+
+
+_CAMERAPOSE_POSITION = _descriptor.Descriptor(
+  name='Position',
+  full_name='CameraPose.Position',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='x', full_name='CameraPose.Position.x', index=0,
+      number=1, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='y', full_name='CameraPose.Position.y', index=1,
+      number=2, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='z', full_name='CameraPose.Position.z', index=2,
+      number=3, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=120,
+  serialized_end=163,
+)
+
+_CAMERAPOSE_ORIENTATION = _descriptor.Descriptor(
+  name='Orientation',
+  full_name='CameraPose.Orientation',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='x', full_name='CameraPose.Orientation.x', index=0,
+      number=1, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='y', full_name='CameraPose.Orientation.y', index=1,
+      number=2, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='z', full_name='CameraPose.Orientation.z', index=2,
+      number=3, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='w', full_name='CameraPose.Orientation.w', index=3,
+      number=4, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=165,
+  serialized_end=222,
+)
+
+_CAMERAPOSE = _descriptor.Descriptor(
+  name='CameraPose',
+  full_name='CameraPose',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='position', full_name='CameraPose.position', index=0,
+      number=1, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='orientation', full_name='CameraPose.orientation', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[_CAMERAPOSE_POSITION, _CAMERAPOSE_ORIENTATION, ],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=20,
+  serialized_end=222,
+)
 
 
 _IMAGEMESSAGE = _descriptor.Descriptor(
@@ -47,6 +183,13 @@ _IMAGEMESSAGE = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='cameraPose', full_name='ImageMessage.cameraPose', index=2,
+      number=3, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -59,12 +202,41 @@ _IMAGEMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19,
-  serialized_end=75,
+  serialized_start=224,
+  serialized_end=313,
 )
 
+_CAMERAPOSE_POSITION.containing_type = _CAMERAPOSE
+_CAMERAPOSE_ORIENTATION.containing_type = _CAMERAPOSE
+_CAMERAPOSE.fields_by_name['position'].message_type = _CAMERAPOSE_POSITION
+_CAMERAPOSE.fields_by_name['orientation'].message_type = _CAMERAPOSE_ORIENTATION
+_IMAGEMESSAGE.fields_by_name['cameraPose'].message_type = _CAMERAPOSE
+DESCRIPTOR.message_types_by_name['CameraPose'] = _CAMERAPOSE
 DESCRIPTOR.message_types_by_name['ImageMessage'] = _IMAGEMESSAGE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
+
+CameraPose = _reflection.GeneratedProtocolMessageType('CameraPose', (_message.Message,), {
+
+  'Position' : _reflection.GeneratedProtocolMessageType('Position', (_message.Message,), {
+    'DESCRIPTOR' : _CAMERAPOSE_POSITION,
+    '__module__' : 'imagedata_pb2'
+    # @@protoc_insertion_point(class_scope:CameraPose.Position)
+    })
+  ,
+
+  'Orientation' : _reflection.GeneratedProtocolMessageType('Orientation', (_message.Message,), {
+    'DESCRIPTOR' : _CAMERAPOSE_ORIENTATION,
+    '__module__' : 'imagedata_pb2'
+    # @@protoc_insertion_point(class_scope:CameraPose.Orientation)
+    })
+  ,
+  'DESCRIPTOR' : _CAMERAPOSE,
+  '__module__' : 'imagedata_pb2'
+  # @@protoc_insertion_point(class_scope:CameraPose)
+  })
+_sym_db.RegisterMessage(CameraPose)
+_sym_db.RegisterMessage(CameraPose.Position)
+_sym_db.RegisterMessage(CameraPose.Orientation)
 
 ImageMessage = _reflection.GeneratedProtocolMessageType('ImageMessage', (_message.Message,), {
   'DESCRIPTOR' : _IMAGEMESSAGE,
